@@ -6,6 +6,11 @@ My implementation in Python of Epstein and Axtell's large scale agent-based comp
 ### Results
 (todo)
 
+### Instructions
+Install Python 2.6 and above: https://www.python.org.  
+Install Pygame 1.9 package: http://www.pygame.org.  
+On command schell, execute: `python sugarscape.py`.  
+
 ### References
 - Epstein, Joshua M.; Axtell, Robert L. (1996). Growing Artificial Societies: Social Science From the Bottom Up. MIT/Brookings Institution.
 - Schelling, Thomas C. (1978). Micromotives and Macrobehavior. Norton.
