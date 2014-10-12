@@ -36,7 +36,7 @@ colorSugar = ((250,250,220),
 colorRed = 250, 50, 50
 colorPink = 250, 50, 250
 colorBlue = 50, 50, 250
-fps = 1
+fps = 10
 
 # environment
 gridSize = 50, 50
@@ -51,9 +51,9 @@ growFactor1 = 1
 growFactor2 = float(growFactor1) / 8
 
 # agents
-agentColorScheme = 0        # Agents colour meaning: 0 = all, 1 = bySexe, 2 = byMetabolism, 3 = byVision, 4 = byGroup
+# agentColorScheme: Agents colour meaning = 0:all, 1:bySexe, 2:byMetabolism, 3:byVision, 4:byGroup
 maxAgentMetabolism = 4
-maxAgentVision = 8
+maxAgentVision = 6
 initEndowment = 50, 100
 minmaxAgentAge = 60, 100
 female = 0
@@ -68,12 +68,9 @@ tags0 = 0
 tags1 = 2**tagsLength - 1
 combatAlpha = 2
 
-# agents distribution
-#distributions = [(400, None, (0, 50, 0, 50))] # for Evolution from random distribution
-distributions = [(300, None, (0, 20, 30, 50))] # for Migration
-#distributions = [(200, tags0, (0, 20, 30, 50)), (200, tags1, (30, 50, 0, 20))]
-
-# rules
+''' for Evolution from random distribution
+agentColorScheme = 0        
+distributions = [(400, None, (0, 50, 0, 50))] 
 ruleGrow = True
 ruleSeasons = False
 ruleMoveEat = True
@@ -81,7 +78,33 @@ ruleCombat = False
 ruleLimitedLife = False
 ruleReplacement = False
 ruleProcreate = False
+ruleTransmit = False'''
+
+''' for Emergent waves migration
+agentColorScheme = 0        
+distributions = [(300, None, (0, 20, 30, 50))]
+ruleGrow = True
+ruleSeasons = False
+ruleMoveEat = True
+ruleCombat = False
+ruleLimitedLife = False
+ruleReplacement = False
+ruleProcreate = False
+ruleTransmit = False'''
+
+# for Seasonal migration
+agentColorScheme = 0        
+distributions = [(400, None, (0, 50, 0, 50))] 
+ruleGrow = True
+ruleSeasons = True
+ruleMoveEat = True
+ruleCombat = False
+ruleLimitedLife = False
+ruleReplacement = False
+ruleProcreate = False
 ruleTransmit = False
+
+#distributions = [(200, tags0, (0, 20, 30, 50)), (200, tags1, (30, 50, 0, 20))]
 
 ''' 
 Global functions
