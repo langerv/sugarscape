@@ -285,6 +285,7 @@ class Agent:
 
     '''
     # sort implementation
+    # (for the record: actually was slower so not used)
     def compareLocations(self, (x1, y1), (x2, y2)):
         c1 = self.env.getCapacity((x1, y1))
         c2 = self.env.getCapacity((x2, y2))

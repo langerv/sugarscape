@@ -46,8 +46,9 @@ class Environment:
         jmin = max(jmin, 0)
         imax = min(imax + 1, self.gridWidth)
         jmax = min(jmax + 1, self.gridHeight)
-        for i,j in product(range(self.gridWidth), range(self.gridHeight)):
-            self.grid[i][j][0] = min(self.grid[i][j][0] + alpha, self.grid[i][j][1])
+        for j in range(jmin, jmax):
+            for i in range (imin, imax):
+                self.grid[i][j][0] = min(self.grid[i][j][0] + alpha, self.grid[i][j][1])
 
     def setAgent(self, (i, j), agent):
         self.grid[i][j][2] = agent

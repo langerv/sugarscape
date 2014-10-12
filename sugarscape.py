@@ -21,20 +21,28 @@ initial simulation parameters
 # view
 screenSize = 600, 600
 colorBackground = 250,250,250
-colorSugar = ((250,250,225),
-              (250,250,200), 
-              (250,250,150), 
-              (250,250,050))
+
+colorSugar = ((250,250,200),
+              (250,250,180),
+              (250,250,160),
+              (250,250,140),
+              (250,250,120),
+              (250,250,100),
+              (250,250,80),
+              (250,250,60),
+              (250,250,40),
+              (250,250,20))
+
 colorRed = 250, 50, 50
 colorPink = 250, 50, 250
 colorBlue = 50, 50, 250
-fps = 60
+fps = 5
 
 # environment
 gridSize = 50, 50
-northSite = 35, 15, 25
-southSite = 15, 35, 25
-maxCapacity = 4
+northSite = 35, 15, 20
+southSite = 15, 35, 20
+maxCapacity = 10
 seasonPeriod = 50
 northRegion = 0, 0, 49, 24
 southRegion = 0, 25, 49, 49
@@ -43,6 +51,7 @@ growFactor1 = 1
 growFactor2 = float(growFactor1) / 8
 
 # agents
+agentColorScheme = 0        # Agents colour meaning: 0 = all, 1 = bySexe, 2 = byMetabolism, 3 = byVision, 4 = byGroup
 maxAgentMetabolism = 4
 maxAgentVision = 6
 initEndowment = 50, 100
@@ -60,18 +69,18 @@ tags1 = 2**tagsLength - 1
 combatAlpha = 2
 
 # agents distribution
-distributions = [(200, tags0, (0, 20, 30, 50)), (200, tags1, (30, 50, 0, 20))]
-#distributions = [(50, None, (0, 50, 0, 50))]
+#distributions = [(200, tags0, (0, 20, 30, 50)), (200, tags1, (30, 50, 0, 20))]
+distributions = [(300, None, (0, 20, 30, 50))]
 
 # rules
 ruleGrow = True
 ruleSeasons = False
-ruleMoveEat = False
-ruleCombat = True
-ruleLimitedLife = True
+ruleMoveEat = True
+ruleCombat = False
+ruleLimitedLife = False
 ruleReplacement = False
-ruleProcreate = True
-ruleTransmit = True
+ruleProcreate = False
+ruleTransmit = False
 
 ''' 
 Global functions
@@ -150,10 +159,8 @@ class View:
         else:
             return colorBlue
 
-    agentColorSchemes = {0: all, 1: bySexe, 2: byMetabolism, 3: byVision, 4:byGroup}
+    agentColorSchemes = {0:all, 1:bySexe, 2:byMetabolism, 3:byVision, 4:byGroup}
     
-    agentColorScheme = 4
-        
     # remove or replace agent
     def findDistribution(self, tags):
         getTribe = lambda x, y: round(float(bin(x).count('1')) / float(y))
@@ -282,12 +289,13 @@ class View:
             capacity = env.getCapacity((i,j))
             if capacity > 0:
                 pygame.draw.rect(self.screen, colorSugar[capacity - 1], (x, y, self.siteSize - 1, self.siteSize - 1))
+
             # Draw agent if any
             agent = env.getAgent((i, j))
             if agent:
                 pygame.draw.circle(self.screen,
                                     # select color scheme
-                                    self.agentColorSchemes.get(self.agentColorScheme)(self, agent), 
+                                    self.agentColorSchemes.get(agentColorScheme)(self, agent), 
                                     (x + self.radius, y + self.radius), 
                                     self.radius - 1)
 
@@ -298,6 +306,7 @@ class View:
         dt = 0
         framecount = 0
         framerate = 0
+        update = False
         while not self.quit:
             t0 = pygame.time.get_ticks()
             # handle events
@@ -322,15 +331,17 @@ class View:
                         widget = WdgAgent(self.metabolismMean, self.visionMean, "Agents' metabolism and vision mean values", 1000, 300)
                         widget.execute()
 
+                    elif event.key == K_F12:
+                        update = not update
+
             # update sugarscape
-            self.update()
+            if update:
+                self.update()
+                self.iteration += 1
             
             # display sugarscape state
             self.draw()
 
-            # iteration
-            self.iteration += 1
-            
             # wait simulation step
             self.clock.tick(fps)
 
@@ -344,7 +355,8 @@ class View:
                 framecount = 0
                 
             # display infos
-            print "Iteration = ", self.iteration, "; fps = ", framerate, "; Seasons (N,S) = ", self.season, "; Population = ", len(self.agents)
+            if update:
+                print "Iteration = ", self.iteration, "; fps = ", framerate, "; Seasons (N,S) = ", self.season, "; Population = ", len(self.agents), " -  press F12 to pause."
 
 ''' 
 Main 
