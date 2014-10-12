@@ -5,7 +5,7 @@ My implementation in Python of Epstein and Axtell's large scale agent-based comp
 
 ### Results
 
-##### Evolution from random distribution (G1, M)
+###### Evolution from random distribution (G1, M)
 ![](results/sgEvolution0.png)
 ![](results/sgEvolution500.png)
 
