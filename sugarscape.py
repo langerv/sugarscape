@@ -36,11 +36,11 @@ colorSugar = ((250,250,220),
 colorRed = 250, 50, 50
 colorPink = 250, 50, 250
 colorBlue = 50, 50, 250
-fps = 10
+fps = 20
 
 # environment
 gridSize = 50, 50
-northSite = 35, 15, 20
+northSite = 40, 10, 20
 southSite = 15, 35, 20
 maxCapacity = 10
 seasonPeriod = 50
@@ -68,7 +68,7 @@ tags0 = 0
 tags1 = 2**tagsLength - 1
 combatAlpha = 2
 
-''' for Evolution from random distribution
+''' settings for Evolution from random distribution
 agentColorScheme = 0        
 distributions = [(400, None, (0, 50, 0, 50))] 
 ruleGrow = True
@@ -80,7 +80,7 @@ ruleReplacement = False
 ruleProcreate = False
 ruleTransmit = False'''
 
-''' for Emergent waves migration
+''' settings for Emergent waves migration
 agentColorScheme = 0        
 distributions = [(300, None, (0, 20, 30, 50))]
 ruleGrow = True
@@ -92,7 +92,7 @@ ruleReplacement = False
 ruleProcreate = False
 ruleTransmit = False'''
 
-# for Seasonal migration
+''' settings for Seasonal migration
 agentColorScheme = 0        
 distributions = [(400, None, (0, 50, 0, 50))] 
 ruleGrow = True
@@ -102,6 +102,18 @@ ruleCombat = False
 ruleLimitedLife = False
 ruleReplacement = False
 ruleProcreate = False
+ruleTransmit = False'''
+
+# settings for societal evolution
+agentColorScheme = 3       
+distributions = [(300, None, (0, 50, 0, 50))] 
+ruleGrow = True
+ruleSeasons = False
+ruleMoveEat = True
+ruleCombat = False
+ruleLimitedLife = True
+ruleReplacement = False
+ruleProcreate = True
 ruleTransmit = False
 
 #distributions = [(200, tags0, (0, 20, 30, 50)), (200, tags1, (30, 50, 0, 20))]
