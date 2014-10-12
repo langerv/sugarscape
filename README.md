@@ -4,7 +4,8 @@ sugarscape
 My implementation in Python of Epstein and Axtell's large scale agent-based computational model, the Sugarscape, to explore the role of social phenomenon such as seasonal migrations, pollution, sexual reproduction, combat, and transmission of disease and even culture. 
 
 ### Results
-(todo)
+
+#### Evolution from random distribution (G1, M)
 
 ### Instructions
 Install Python 2.6 and above: https://www.python.org.  
