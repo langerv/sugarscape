@@ -22,7 +22,8 @@ initial simulation parameters
 screenSize = 600, 600
 colorBackground = 250,250,250
 
-colorSugar = ((250,250,200),
+colorSugar = ((250,250,220),
+              (250,250,200),
               (250,250,180),
               (250,250,160),
               (250,250,140),
@@ -30,13 +31,12 @@ colorSugar = ((250,250,200),
               (250,250,100),
               (250,250,80),
               (250,250,60),
-              (250,250,40),
-              (250,250,20))
+              (250,250,40))
 
 colorRed = 250, 50, 50
 colorPink = 250, 50, 250
 colorBlue = 50, 50, 250
-fps = 5
+fps = 30
 
 # environment
 gridSize = 50, 50
@@ -70,7 +70,8 @@ combatAlpha = 2
 
 # agents distribution
 #distributions = [(200, tags0, (0, 20, 30, 50)), (200, tags1, (30, 50, 0, 20))]
-distributions = [(300, None, (0, 20, 30, 50))]
+#distributions = [(300, None, (0, 20, 30, 50))]
+distributions = [(400, None, (0, 50, 0, 50))]
 
 # rules
 ruleGrow = True
