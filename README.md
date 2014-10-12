@@ -5,9 +5,11 @@ My implementation in Python of Epstein and Axtell's large scale agent-based comp
 
 ### Results
 
-###### Evolution from random distribution. Rule {G1, M}.
-![](results/sgEvolution0.png)
-![](results/sgEvolution500.png)
+###### Evolution from random distribution under rule {G1, M}.
+![](results/sgEvolution0.png) ![](results/sgEvolution500.png)
+
+###### Emergent diagonal waves of migration under rule {G1, M}.
+![](results/sgMigration0.png) ![](results/sgMigration6.png) ![](results/sgMigration20.png)
 
 ### Instructions
 Install Python 2.6 and above: https://www.python.org.  
