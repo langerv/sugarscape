@@ -16,6 +16,7 @@ My implementation in Python of Epstein and Axtell's large scale agent-based comp
 
 ###### Societal evolution through Reproduction under rule ({G1}, {M, S}) coloring by agent vision:
 ![](results/sgSocietal0.png) ![](results/sgSocietal50.png) ![](results/sgSocietal500.png)
+![](results/sgSocietalMeanVision900.png) ![](results/sgSocietalPopulation900.png) ![](results/sgSocietalWealthHisto900.png)
 
 ### Instructions
 Install Python 2.6 and above: https://www.python.org.  
