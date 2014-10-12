@@ -22,6 +22,7 @@ In a formula: Cellular Automata + Agents = Sugarscape.
 Install Python 2.6 and above: https://www.python.org.  
 Install Pygame 1.9 package: http://www.pygame.org.  
 On command schell, execute: `python sugarscape.py`.  
+Edit sugarscape.py and uncomment settings for the simulation you want to run.
 
 ### References
 - Schelling, Thomas C. (1978). Micromotives and Macrobehavior, Norton.
