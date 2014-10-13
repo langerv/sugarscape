@@ -27,6 +27,6 @@ Install Pygame 1.9 package: http://www.pygame.org.
 On command schell, execute: `python sugarscape.py`.  
 Edit `sugarscape.py` and uncomment settings for the wanted simulation, run again.
 
-### References
+### Reference
 - Schelling, Thomas C. (1978). Micromotives and Macrobehavior, Norton.
 - Epstein, Joshua M.; Axtell, Robert L. (1996). Growing Artificial Societies: Social Science From the Bottom Up, MIT/Brookings Institution.
