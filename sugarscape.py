@@ -36,7 +36,7 @@ colorSugar = ((250,250,220),
 colorRed = 250, 50, 50
 colorPink = 250, 50, 250
 colorBlue = 50, 50, 250
-fps = 20
+fps = 10
 
 # environment
 gridSize = 50, 50
@@ -104,7 +104,7 @@ ruleReplacement = False
 ruleProcreate = False
 ruleTransmit = False'''
 
-# settings for societal evolution
+''' settings for societal evolution
 agentColorScheme = 3       
 distributions = [(300, None, (0, 50, 0, 50))] 
 ruleGrow = True
@@ -114,7 +114,21 @@ ruleCombat = False
 ruleLimitedLife = True
 ruleReplacement = False
 ruleProcreate = True
-ruleTransmit = False
+ruleTransmit = False'''
+
+# settings for cultural transmission
+agentColorScheme = 4
+#distributions = [(300, None, (0, 50, 0, 50))] 
+distributions = [(200, tags0, (0, 50, 0, 50)), (200, tags1, (0, 50, 0, 50))]
+ruleGrow = True
+ruleSeasons = False
+ruleMoveEat = True
+ruleCombat = False
+ruleLimitedLife = False
+ruleReplacement = False
+ruleProcreate = False
+ruleTransmit = True
+
 
 #distributions = [(200, tags0, (0, 20, 30, 50)), (200, tags1, (30, 50, 0, 20))]
 
