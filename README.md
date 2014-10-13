@@ -18,6 +18,9 @@ In a formula: Cellular Automata + Agents = Sugarscape.
 ###### Societal evolution through crossover of Genetic Attributes in Sexual Reproduction under rules ({G1}, {M, S}) coloring by agent vision:
 ![](results/sgSocietal0.png) ![](results/sgSocietal50.png) ![](results/sgSocietal500.png)
 
+###### Cultural transmission by tag-flipping under rules ({G1}, {M, K}):
+![](results/sgCultural0.png) ![](results/sgCultural132.png) ![](results/sgCultural694.png)
+
 ### Instructions
 Install Python 2.6 and above: https://www.python.org.  
 Install Pygame 1.9 package: http://www.pygame.org.  
