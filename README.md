@@ -21,6 +21,10 @@ In other words: Cellular Automata + Agents = Sugarscape.
 ###### Cultural transmission by tag-flipping under rules ({G1}, {M, K}) coloring by tribes:
 ![](results/sgCultural0.png) ![](results/sgCultural132.png) ![](results/sgCultural694.png)
 
+###### Combat under rules ({G1}, {Cinf}) with various outcomes a) coexistence between Blue and Red b) Blue dominance c) Red dominance:
+![](results/sgCombatInfinite0.png) ![](results/sgCombatInfinite4.png) ![](results/sgCombatInfinite.png)
+![](results/sgCombatInfinite5000.png) ![](results/sgCombatInfinite5010.png) ![](results/sgCombatInfinite20000.png)
+
 ### Instructions
 Install Python 2.6 and above: https://www.python.org.  
 Install Pygame 1.9 package: http://www.pygame.org.  
