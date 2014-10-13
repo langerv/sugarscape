@@ -21,7 +21,7 @@ In other words: Cellular Automata + Agents = Sugarscape.
 ###### Cultural transmission by tag-flipping under rules ({G1}, {M, K}) coloring by tribes:
 ![](results/sgCultural0.png) ![](results/sgCultural132.png) ![](results/sgCultural694.png)
 
-###### Combat under rules ({G1}, {Cinf}) with various outcomes a) coexistence between Blue and Red b) Red dominance c) Blue dominance:
+###### Combat between two tribbes under rules ({G1}, {Cinf}), with various outcomes: a) coexistence between Blue and Red b) Red dominance c) Blue dominance:
 ![](results/sgCombatInfinite0.png) ![](results/sgCombatInfinite4.png) ![](results/sgCombatInfinite60.png)
 ![](results/sgCombatInfinite5000.png) ![](results/sgCombatInfinite5010.png) ![](results/sgCombatInfinite20000.png)
 
