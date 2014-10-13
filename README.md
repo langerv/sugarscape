@@ -18,7 +18,7 @@ In a formula: Cellular Automata + Agents = Sugarscape.
 ###### Societal evolution through crossover of Genetic Attributes in Sexual Reproduction under rules ({G1}, {M, S}) coloring by agent vision:
 ![](results/sgSocietal0.png) ![](results/sgSocietal50.png) ![](results/sgSocietal500.png)
 
-###### Cultural transmission by tag-flipping under rules ({G1}, {M, K}):
+###### Cultural transmission by tag-flipping under rules ({G1}, {M, K}) coloring by tribes:
 ![](results/sgCultural0.png) ![](results/sgCultural132.png) ![](results/sgCultural694.png)
 
 ### Instructions
