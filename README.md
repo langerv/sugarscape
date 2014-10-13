@@ -2,7 +2,7 @@ sugarscape
 ==========
 
 My implementation in Python of Epstein and Axtell's large scale agent-based computational model, the Sugarscape, to explore the role of social phenomenon such as seasonal migrations, pollution, sexual reproduction, combat, and transmission of disease and even culture.  
-In a formula: Cellular Automata + Agents = Sugarscape.
+In other words: Cellular Automata + Agents = Sugarscape.
 
 ### Results
 
@@ -26,6 +26,12 @@ Install Python 2.6 and above: https://www.python.org.
 Install Pygame 1.9 package: http://www.pygame.org.  
 On command schell, execute: `python sugarscape.py`.  
 Edit `sugarscape.py` and uncomment settings for the wanted simulation, run again.
+
+##### Available controls during simulation:
+- **[F1]**  : show current agents population.
+- **[F2]**  : show current agents whealth histogram.
+- **[F3]**  : show current agents metabolism and vision mean values.
+- **[F12]** : start / pause / resume simulation.
 
 ### Reference
 - Schelling, Thomas C. (1978). Micromotives and Macrobehavior, Norton.
