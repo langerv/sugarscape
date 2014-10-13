@@ -22,7 +22,7 @@ In other words: Cellular Automata + Agents = Sugarscape.
 ![](results/sgCultural0.png) ![](results/sgCultural132.png) ![](results/sgCultural694.png)
 
 ###### Combat between two tribbes under rules ({G1}, {Cinf}), with various outcomes: a) coexistence between Blue and Red b) Red dominance c) Blue dominance:
-![](results/sgCombatInfinite0.png) ![](results/sgCombatInfinite4.png) ![](results/sgCombatInfinite60.png)
+![](results/sgCombatInfinite0.png) ![](results/sgCombatInfinite4.png) ![](results/sgCombatInfinite60.png)  
 a)![](results/sgCombatInfinite5000.png)b)![](results/sgCombatInfinite5010.png)c)![](results/sgCombatInfinite20000.png)
 
 ### Instructions
