@@ -28,10 +28,10 @@ On command schell, execute: `python sugarscape.py`.
 Edit `sugarscape.py` and uncomment settings for the wanted simulation, run again.
 
 ##### Available controls during simulation:
-- [F1]: show current agents population.
-- [F2]: show current agents health histogran.
-- [F3]: show current agents metabolism and vision mean values.
-- [F12]: pause / resume simulation.
+- **[F1]**  : show current agents population.
+- **[F2]**  : show current agents health histogran.
+- **[F3]**  : show current agents metabolism and vision mean values.
+- **[F12]** : pause / resume simulation.
 
 ### Reference
 - Schelling, Thomas C. (1978). Micromotives and Macrobehavior, Norton.
