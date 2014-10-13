@@ -36,13 +36,13 @@ colorSugar = ((250,250,220),
 colorRed = 250, 50, 50
 colorPink = 250, 50, 250
 colorBlue = 50, 50, 250
-fps = 10
+fps = 60
 
 # environment
 gridSize = 50, 50
 northSite = 40, 10, 20
 southSite = 15, 35, 20
-maxCapacity = 10
+maxCapacity = 10 # !!! < or = nbr items in colorSugar array
 seasonPeriod = 50
 northRegion = 0, 0, 49, 24
 southRegion = 0, 25, 49, 49
@@ -66,7 +66,6 @@ childbearing = fertility[0], fertility[1]   # female , male
 tagsLength = 5 # must be odd
 tags0 = 0
 tags1 = 2**tagsLength - 1
-combatAlpha = 2
 
 ''' settings for Evolution from random distribution
 agentColorScheme = 0        
@@ -116,9 +115,8 @@ ruleReplacement = False
 ruleProcreate = True
 ruleTransmit = False'''
 
-# settings for cultural transmission
+''' settings for Cultural transmission
 agentColorScheme = 4
-#distributions = [(300, None, (0, 50, 0, 50))] 
 distributions = [(200, tags0, (0, 50, 0, 50)), (200, tags1, (0, 50, 0, 50))]
 ruleGrow = True
 ruleSeasons = False
@@ -127,10 +125,22 @@ ruleCombat = False
 ruleLimitedLife = False
 ruleReplacement = False
 ruleProcreate = False
-ruleTransmit = True
+ruleTransmit = True'''
 
-
-#distributions = [(200, tags0, (0, 20, 30, 50)), (200, tags1, (30, 50, 0, 20))]
+# settings for Combat with alpha = infinite
+agentColorScheme = 4
+distributions = [
+    (200, tags0, (0, 20, 30, 50)),  # blues
+    (200, tags1, (30, 50, 0, 20))]  # reds
+ruleGrow = True
+ruleSeasons = False
+ruleMoveEat = True
+ruleCombat = True
+ruleLimitedLife = False
+ruleReplacement = False
+ruleProcreate = False
+ruleTransmit = False
+combatAlpha = maxCapacity
 
 ''' 
 Global functions

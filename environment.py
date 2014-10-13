@@ -25,7 +25,10 @@ class Environment:
     
     def getCapacity(self, (i, j)):
         return int(self.grid[i][j][0])
-    
+
+    def decCapacity(self, (i,j), value):
+        self.grid[i][j][0] = max(0, self.grid[i][j][0] - value)
+
     def addFoodSite(self, (si, sj, r), maxCapacity):
         # calculate radial dispersion of capacity from maxCapacity to 0
         distance = lambda di, dj : sqrt(di*di + dj*dj)

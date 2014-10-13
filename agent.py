@@ -372,7 +372,7 @@ class Agent:
             
         # kill, collect, eat and consume
         self.sugar = max(self.sugar + best - self.metabolism, 0)
-        self.env.setCapacity((self.x, self.y), 0)
+        self.env.decCapacity((self.x, self.y), alpha)
         
         return killed
 
