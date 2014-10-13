@@ -27,6 +27,12 @@ Install Pygame 1.9 package: http://www.pygame.org.
 On command schell, execute: `python sugarscape.py`.  
 Edit `sugarscape.py` and uncomment settings for the wanted simulation, run again.
 
+##### Available controls during simulation:
+- [F1]: show current agents population.
+- [F2]: show current agents health histogran.
+- [F3]: show current agents metabolism and vision mean values.
+- [F12]: pause / resume simulation.
+
 ### Reference
 - Schelling, Thomas C. (1978). Micromotives and Macrobehavior, Norton.
 - Epstein, Joshua M.; Axtell, Robert L. (1996). Growing Artificial Societies: Social Science From the Bottom Up, MIT/Brookings Institution.
