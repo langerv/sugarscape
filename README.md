@@ -29,7 +29,7 @@ Edit `sugarscape.py` and uncomment settings for the wanted simulation, run again
 
 ##### Available controls during simulation:
 - **[F1]**  : show current agents population.
-- **[F2]**  : show current agents health histogram.
+- **[F2]**  : show current agents whealth histogram.
 - **[F3]**  : show current agents metabolism and vision mean values.
 - **[F12]** : start / pause / resume simulation.
 
