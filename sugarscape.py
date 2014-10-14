@@ -201,7 +201,7 @@ ruleProcreate = True
 ruleTransmit = True
 combatAlpha = 1000000
 
-fps = 2
+fps = 10
 
 ''' 
 Global functions
