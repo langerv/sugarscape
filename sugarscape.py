@@ -36,7 +36,6 @@ colorSugar = ((250,250,220),
 colorRed = 250, 50, 50
 colorPink = 250, 50, 250
 colorBlue = 50, 50, 250
-fps = 1
 
 # environment
 gridSize = 50, 50
@@ -157,7 +156,7 @@ ruleProcreate = False
 ruleTransmit = False
 combatAlpha = 2'''
 
-# settings for Combat eliminates Waves with alpha = 2
+'''# settings for Combat eliminates Waves with alpha = 2
 agentColorScheme = 4
 distributions = [
     (300, tags0, (0, 20, 30, 50)),  # blues
@@ -170,7 +169,39 @@ ruleLimitedLife = False
 ruleReplacement = False
 ruleProcreate = False
 ruleTransmit = False
-combatAlpha = 2
+combatAlpha = 2'''
+
+'''# settings for Combat and cultural transmission
+agentColorScheme = 4
+distributions = [
+    (300, tags0, (0, 20, 30, 50)),  # blues
+    (300, tags1, (30, 50, 0, 20))]  # reds
+ruleGrow = True
+ruleSeasons = False
+ruleMoveEat = False
+ruleCombat = True
+ruleLimitedLife = False
+ruleReplacement = False
+ruleProcreate = False
+ruleTransmit = True
+combatAlpha = 1000000'''
+
+# settings for Proto-History
+agentColorScheme = 4
+distributions = [
+    (25, tags0, (0, 50, 0, 50)),  # blues
+    (25, tags1, (0, 50, 0, 50))]  # reds
+ruleGrow = True
+ruleSeasons = False
+ruleMoveEat = True
+ruleCombat = False
+ruleLimitedLife = True
+ruleReplacement = False
+ruleProcreate = True
+ruleTransmit = True
+combatAlpha = 1000000
+
+fps = 2
 
 ''' 
 Global functions
@@ -333,7 +364,8 @@ class View:
 
             # DIE
             # increment age
-            if ruleLimitedLife and not agent.incAge():
+            alive = agent.incAge();
+            if ruleLimitedLife and not alive:
                 # free environment
                 self.env.setAgent(agent.getLocation(), None)
                 # remove or replace agent
