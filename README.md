@@ -25,7 +25,7 @@ In other words: Cellular Automata + Agents = Sugarscape.
 ![](results/sgCombatCinfInitial.png) ![](results/sgCombatCinf10.png) ![](results/sgCombatCinf20.png)  
 ![](results/sgCombatCinfCoexistence.png) ![](results/sgCombatCinfRedDominance.png) ![](results/sgCombatCinfBlueDominance.png)
 
-###### Trench war between two tribes under rules ({G1}, {C2, R[60, 100]}) coloring by tribes:
+###### Trench war and front line between two tribes fighting under rules ({G1}, {C2, R[60, 100]}) coloring by tribes:
 ![](results/sgCombatC2Trench0.png) ![](results/sgCombatC2Trench100.png) ![](results/sgCombatC2Trench150.png)
 
 ### Instructions
