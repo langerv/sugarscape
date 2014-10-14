@@ -22,8 +22,8 @@ In other words: Cellular Automata + Agents = Sugarscape.
 ![](results/sgCultural0.png) ![](results/sgCultural132.png) ![](results/sgCultural694.png)
 
 ###### Combat between two tribbes under rules ({G1}, {Cinf}), with various outcomes: a) coexistence between Blue and Red b) Red dominance c) Blue dominance:
-![](results/sgCombatInfinite0.png) ![](results/sgCombatInfinite4.png) ![](results/sgCombatInfinite60.png)  
-![](results/sgCombatInfinite5000.png) ![](results/sgCombatInfinite5010.png) ![](results/sgCombatInfinite20000.png)
+![](results/sgCombatCinfInitial.png) ![](results/sgCombatCinf10.png) ![](results/sgCombatCinf20.png)  
+![](results/sgCombatCinfCoexistence.png) ![](results/sgCombatCinfRedDominance.png) ![](results/sgCombatCinfBlueDominance.png)
 
 ### Instructions
 Install Python 2.6 and above: https://www.python.org.  
