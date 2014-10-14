@@ -36,11 +36,11 @@ colorSugar = ((250,250,220),
 colorRed = 250, 50, 50
 colorPink = 250, 50, 250
 colorBlue = 50, 50, 250
-fps = 60
+fps = 2
 
 # environment
 gridSize = 50, 50
-northSite = 40, 10, 20
+northSite = 35, 15, 20
 southSite = 15, 35, 20
 maxCapacity = 10 # !!! < or = nbr items in colorSugar array
 seasonPeriod = 50
@@ -130,17 +130,32 @@ ruleTransmit = True'''
 # settings for Combat with alpha = infinite
 agentColorScheme = 4
 distributions = [
-    (200, tags0, (0, 20, 30, 50)),  # blues
-    (200, tags1, (30, 50, 0, 20))]  # reds
+    (300, tags0, (0, 20, 30, 50)),  # blues
+    (300, tags1, (30, 50, 0, 20))]  # reds
 ruleGrow = True
 ruleSeasons = False
-ruleMoveEat = True
+ruleMoveEat = False
 ruleCombat = True
 ruleLimitedLife = False
 ruleReplacement = False
 ruleProcreate = False
 ruleTransmit = False
-combatAlpha = maxCapacity
+combatAlpha = 1000000
+
+''' settings for Combat with alpha = 2
+agentColorScheme = 4
+distributions = [
+    (300, tags0, (0, 20, 30, 50)),  # blues
+    (300, tags1, (30, 50, 0, 20))]  # reds
+ruleGrow = True
+ruleSeasons = False
+ruleMoveEat = False #True
+ruleCombat = True #False
+ruleLimitedLife = False
+ruleReplacement = False
+ruleProcreate = False
+ruleTransmit = False
+combatAlpha = 2'''
 
 ''' 
 Global functions

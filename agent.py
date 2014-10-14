@@ -332,11 +332,10 @@ class Agent:
         preys = self.getPreys()
         
         # append to food safe preys (retaliation condition)
-        reward = lambda cost, x : max(cost,min(cost,x))
         C0 = self.sugar - self.metabolism
         food.extend([preyA.getLocation() for preyA, preyB in product(preys, preys)
                      if preyA != preyB 
-                     and preyB.getSugar() < (C0 + self.env.getCapacity(preyA.getLocation()) + reward(alpha, preyA.getSugar()))])
+                     and preyB.getSugar() < (C0 + self.env.getCapacity(preyA.getLocation()) + min(alpha, preyA.getSugar()))])
         
         # randomize food locations
         random.shuffle(food)
@@ -351,7 +350,7 @@ class Agent:
             capacity = self.env.getCapacity((x, y))
             agent = self.env.getAgent((x, y))
             if agent :
-                capacity += reward(alpha, agent.getSugar())
+                capacity += min(alpha, agent.getSugar())
             distance = abs(x - self.x + y - self.y) # Manhattan distance enough due to no diagonal
             if capacity > best or (capacity == best and distance < minDistance):
                 best = capacity
@@ -360,9 +359,8 @@ class Agent:
                 newx = x
                 newy = y
 
-        # move to new location if any
+        # move to new location if any, and kill if occupied
         killed = None
-        
         if move:
             killed = self.env.getAgent((newx, newy))
             self.env.setAgent((self.x, self.y), None)
@@ -370,10 +368,9 @@ class Agent:
             self.x = newx
             self.y = newy
             
-        # kill, collect, eat and consume
+        # collect, eat and consume
         self.sugar = max(self.sugar + best - self.metabolism, 0)
-        self.env.decCapacity((self.x, self.y), alpha)
-        
+        self.env.setCapacity((self.x, self.y), 0)
         return killed
 
                 
