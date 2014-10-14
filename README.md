@@ -49,6 +49,10 @@ Edit `sugarscape.py` and uncomment settings for the wanted simulation, run again
 - **[F3]**  : show current agents metabolism and vision mean values.
 - **[F12]** : start / pause / resume simulation.
 
+### Todo
+- Trading rules.
+- Diseases.
+
 ### Reference
 - Schelling, Thomas C. (1978). Micromotives and Macrobehavior, Norton.
 - Epstein, Joshua M.; Axtell, Robert L. (1996). Growing Artificial Societies: Social Science From the Bottom Up, MIT/Brookings Institution.
