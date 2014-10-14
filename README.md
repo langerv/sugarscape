@@ -28,6 +28,9 @@ In other words: Cellular Automata + Agents = Sugarscape.
 ###### Trench war and front line between two tribes fighting under rules ({G1}, {C2, R[60, 100]}) coloring by tribes:
 ![](results/sgCombatC2Trench0.png) ![](results/sgCombatC2Trench100.png) ![](results/sgCombatC2Trench150.png)
 
+###### Combat eliminates waves under rules ({G1}, {C2}):
+![](results/CombatC20.png) ![](results/CombatC26.png) ![](results/CombatC21100.png)
+
 ### Instructions
 Install Python 2.6 and above: https://www.python.org.  
 Install Pygame 1.9 package: http://www.pygame.org.  
