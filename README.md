@@ -31,6 +31,12 @@ In other words: Cellular Automata + Agents = Sugarscape.
 ###### Combat eliminates waves under rules ({G1}, {C2}):
 ![](results/CombatC20.png) ![](results/CombatC26.png) ![](results/CombatC21100.png)
 
+###### Combat and Cultural Transmission under rules ({G1}, {Cinf,K}):
+![](results/sgCombatCultural0.png) ![](results/sgCombatCultural10.png) ![](results/sgCombatCultural1000.png)
+
+###### A realization of the Proto-History under rules ({G1}, {M,S,K}) and random distribution of agents:
+![](results/sgProtoHistoryInitial.png) ![](results/sgProtoHistorySegregation.png) ![](results/sgProtoHistory100.png)
+
 ### Instructions
 Install Python 2.6 and above: https://www.python.org.  
 Install Pygame 1.9 package: http://www.pygame.org.  
