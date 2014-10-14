@@ -34,7 +34,7 @@ In other words: Cellular Automata + Agents = Sugarscape.
 ###### Combat and Cultural Transmission under rules ({G1}, {Cinf,K}):
 ![](results/sgCombatCultural0.png) ![](results/sgCombatCultural10.png) ![](results/sgCombatCultural1000.png)
 
-###### A realization of the Proto-History under rules ({G1}, {M,S,K}) and random distribution of agents:
+###### A realization of the Proto-History under rules ({G1}, {M,S,K}) and random distribution of agents, showing: migration, spatial segregation, mating, cultural transmission and finally tribes interaction such as collisions, penetrations, and conversions producing complex social histories :
 ![](results/sgProtoHistoryInitial.png) ![](results/sgProtoHistorySegregation.png) ![](results/sgProtoHistory100.png)
 
 ### Instructions
