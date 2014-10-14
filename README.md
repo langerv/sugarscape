@@ -12,7 +12,7 @@ In other words: Cellular Automata + Agents = Sugarscape.
 ###### Emergent diagonal waves of migration under rules ({G1}, {M}):
 ![](results/sgMigration0.png) ![](results/sgMigration6.png) ![](results/sgMigration20.png)
 
-###### Seasonal migration and Hibernation resulting from rules ({S1,8,50}, {M}) and random distribution of agents:
+###### Seasonal migration and Hibernation resulting from rules ({S[1,8,50]}, {M}) and random distribution of agents:
 ![](results/sgSeasonal0.png) ![](results/sgSeasonal49.png) ![](results/sgSeasonal99.png)
 
 ###### Societal evolution through crossover of Genetic Attributes in Sexual Reproduction under rules ({G1}, {M, S}) coloring by agent vision:
@@ -24,6 +24,9 @@ In other words: Cellular Automata + Agents = Sugarscape.
 ###### Combat between two tribbes under rules ({G1}, {Cinf}), with various outcomes: a) coexistence between Blue and Red b) Red dominance c) Blue dominance:
 ![](results/sgCombatCinfInitial.png) ![](results/sgCombatCinf10.png) ![](results/sgCombatCinf20.png)  
 ![](results/sgCombatCinfCoexistence.png) ![](results/sgCombatCinfRedDominance.png) ![](results/sgCombatCinfBlueDominance.png)
+
+###### Trench war between two tribes under rules ({G1}, {C2, R[60, 100]}) coloring by tribes:
+![](results/sgCombatC2Trench0.png) ![](results/sgCombatC2Trench100.png) ![](results/sgCombatC2Trench150.png)
 
 ### Instructions
 Install Python 2.6 and above: https://www.python.org.  
