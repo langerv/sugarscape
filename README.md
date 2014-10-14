@@ -29,7 +29,7 @@ In other words: Cellular Automata + Agents = Sugarscape.
 ![](results/sgCombatC2Trench0.png) ![](results/sgCombatC2Trench100.png) ![](results/sgCombatC2Trench150.png)
 
 ###### Combat eliminates waves under rules ({G1}, {C2}):
-![](results/sgCombatC20.png) ![](results/sgCombatC26.png) ![](results/sgCombatC21100.png)
+![](results/CombatC20.png) ![](results/CombatC26.png) ![](results/CombatC21100.png)
 
 ### Instructions
 Install Python 2.6 and above: https://www.python.org.  
