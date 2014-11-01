@@ -6,7 +6,7 @@ In other words: Cellular Automata + Agents = Sugarscape.
 
 ### Results
 
-###### Evolution from random distribution under rules ({G1}, {M}):
+###### Evolution from random distribution under rules ({environment rules}, {agents rules}) =({G1}, {M}):
 ![](results/sgEvolution0.png) ![](results/sgEvolution500.png)
 
 ###### Emergent diagonal waves of migration under rules ({G1}, {M}):
