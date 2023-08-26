@@ -3,7 +3,7 @@ Created on 2010-05-23
 
 @author: rv
 '''
-from Tkinter import *
+from tkinter import *
 
 class WdgAgent():
     '''

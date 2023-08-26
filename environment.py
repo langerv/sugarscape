@@ -12,25 +12,30 @@ class Environment:
     classdocs
     '''
     
-    def __init__(self, (width, height)):
+    def __init__(self, t):
         '''
         Constructor
         '''
+        (width, height) = t
         self.gridWidth = width
         self.gridHeight = height
         self.grid = [[[0, 0, None] for i in range(width)] for j in range(height)]
 
-    def setCapacity(self, (i, j), value):
+    def setCapacity(self, t, value):
+        (i, j) = t
         self.grid[i][j][0] = value
     
-    def getCapacity(self, (i, j)):
+    def getCapacity(self, t):
+        (i, j) = t
         return int(self.grid[i][j][0])
 
-    def decCapacity(self, (i,j), value):
+    def decCapacity(self, t, value):
+        (i, j) = t
         self.grid[i][j][0] = max(0, self.grid[i][j][0] - value)
 
-    def addFoodSite(self, (si, sj, r), maxCapacity):
+    def addFoodSite(self, t, maxCapacity):
         # calculate radial dispersion of capacity from maxCapacity to 0
+        (si, sj, r) = t
         distance = lambda di, dj : sqrt(di*di + dj*dj)
         D = distance(max(si, self.gridWidth - si), max(sj, self.gridHeight - sj)) * (r/float(self.gridWidth))
         for i,j in product(range(self.gridWidth), range(self.gridHeight)):
@@ -43,8 +48,9 @@ class Environment:
         for i,j in product(range(self.gridWidth), range(self.gridHeight)):
             self.grid[i][j][0] = min(self.grid[i][j][0] + alpha, self.grid[i][j][1])
 
-    def growRegion(self, (imin, jmin, imax, jmax), alpha):
+    def growRegion(self, t, alpha):
         # grow  region to maxCapacity with alpha
+        (imin, jmin, imax, jmax) = t
         imin = max(imin, 0)
         jmin = max(jmin, 0)
         imax = min(imax + 1, self.gridWidth)
@@ -53,19 +59,24 @@ class Environment:
             for i in range (imin, imax):
                 self.grid[i][j][0] = min(self.grid[i][j][0] + alpha, self.grid[i][j][1])
 
-    def setAgent(self, (i, j), agent):
+    def setAgent(self, t, agent):
+        (i, j) = t
         self.grid[i][j][2] = agent
 
-    def getAgent(self, (i, j)):
+    def getAgent(self, t):
+        (i, j) = t
         return self.grid[i][j][2]
 
-    def isLocationValid(self, (i, j)):
+    def isLocationValid(self, t):
+        (i, j) = t
         return (i >= 0 and i < self.gridWidth and  j >= 0 and j < self.gridHeight)
     
-    def isLocationFree(self, (i, j)):
+    def isLocationFree(self, t):
+        (i, j) = t
         return (self.grid[i][j][2] == None)
         
-    def getRandomFreeLocation(self,(xmin, xmax, ymin, ymax)):
+    def getRandomFreeLocation(self, t):
+        (xmin, xmax, ymin, ymax) = t
         # build a list of free locations i.e. where env.getAgent(x,y) == None
         # we don't use a global list and we re-build the list each time 
         # because init a new agent is much less frequent than updating agent's position (that would require append / remove to the global list)
