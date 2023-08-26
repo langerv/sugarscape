@@ -302,7 +302,7 @@ class View:
             if initAgent(agent, tags, self.findDistribution(tags)):
                 self.env.setAgent(agent.getLocation(), agent)
             else:
-                print "initAgent failed!"
+                print("initAgent failed!")
                 self.agents.remove(agent)
         else:
             self.agents.remove(agent)
@@ -478,7 +478,7 @@ class View:
                 
             # display infos
             if update:
-                print "Iteration = ", self.iteration, "; fps = ", framerate, "; Seasons (N,S) = ", self.season, "; Population = ", len(self.agents), " -  press F12 to pause."
+                print("Iteration = ", self.iteration, "; fps = ", framerate, "; Seasons (N,S) = ", self.season, "; Population = ", len(self.agents), " -  press F12 to pause.")
 
 ''' 
 Main 
